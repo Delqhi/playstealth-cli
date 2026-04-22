@@ -1,0 +1,4 @@
+{"ts": "2026-04-22T03:19:28.817350+00:00", "sid": "1797eb9d8e3d", "evt": "test_event", "plat": "test", "step": 1, "dur_ms": null, "ok": true, "trap": null, "err": null, "meta": {}}
+{"ts": "2026-04-22T03:19:57.775546+00:00", "sid": "cc53daa64289", "evt": "step_start", "plat": "hey_piggy", "step": 1, "dur_ms": null, "ok": null, "trap": null, "err": null, "meta": {}}
+{"ts": "2026-04-22T03:19:57.775767+00:00", "sid": "cc53daa64289", "evt": "trap_hit", "plat": "hey_piggy", "step": 1, "dur_ms": null, "ok": null, "trap": "attention_check", "err": null, "meta": {}}
+{"ts": "2026-04-22T03:19:57.775827+00:00", "sid": "cc53daa64289", "evt": "step_end", "plat": "hey_piggy", "step": 1, "dur_ms": 234.5, "ok": true, "trap": null, "err": null, "meta": {}}

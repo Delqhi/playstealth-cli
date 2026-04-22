@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  playstealth:
+    build: .
+    container_name: playstealth-cli
+    env_file: .env
+    volumes:
+      - ./data:/app/data          # State, Manifest, Logs
+      - ./plugins:/app/playstealth_actions/plugins/custom  # Eigene Plugins mounten
+    # Headless ist Default im Container. Für Debug: headless=false + VNC/NoVNC nutzen
+    environment:
+      - PLAYSTEALTH_HEADLESS=true
+      - PLAYSTEALTH_DOCKER=true
+    # Beispiel: Survey starten
+    # command: ["run-survey", "--index", "0", "--max-steps", "5"]
+    restart: unless-stopped
